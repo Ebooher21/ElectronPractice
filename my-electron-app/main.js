@@ -12,3 +12,9 @@ const createWindow = () => {
 app.whenReady().then(() => {
     createWindow()
 })
+function ranFunction(){
+    pass;
+}
+const chimichanga = document.createElement('img')
+chimichanga.src = 'OneDrive/Elijah - Personal/Documents/GitHub/ElectronPractice/chimichanga.png'
+document.body.appendChild(chimichanga)
