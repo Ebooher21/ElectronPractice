@@ -12,9 +12,9 @@ const createWindow = () => {
 app.whenReady().then(() => {
     createWindow()
 })
+app.on('window-all-closed', () => {
+    if (process.platform !== 'darwin') app.quit()
+})
 function ranFunction(){
     pass;
 }
-const chimichanga = document.createElement('img')
-chimichanga.src = 'OneDrive/Elijah - Personal/Documents/GitHub/ElectronPractice/chimichanga.png'
-document.body.appendChild(chimichanga)
