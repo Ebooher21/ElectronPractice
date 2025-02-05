@@ -2,15 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta
-            http-equiv="Content-Security-Policy"
-            content="default-src 'self'; script-src 'self'"
-    />
-    <meta
-            http-equiv="X-Content-Security-Policy"
-            content="default-src 'self'; script-src 'self'"
-    />
     <title>Electron Practice</title>
     <style>
         body {
@@ -25,11 +16,11 @@
 </head>
 <body>
     <h1>I want a chimichanga!</h1>
-    <button id="generate-btn">Click Here</button>
-    <div id="image-container"></div>
+    <button id="btn">Click Here</button>
+    <div id="image"></div>
     <script src="main.js">
-        document.getElementById("generate-btn").addEventListener("click", () => {
-            const chim = document.createElement("img");
+        document.getElementById("btn").addEventListener("click", () => {
+            const chim = new Image();
             chim.src = 'C:/Users/elibo/OneDrive/Documents/GitHub/ElectronPractice/chimichanga.png';
             chim.alt = "Chimichanga";
             chim.style.width = "350px";
@@ -37,10 +28,8 @@
             chim.style.border = "2px solid #000";
             chim.style.borderRadius = "5px"
 
-            const container = document.getElementById("image-container");
-            container.innerHTML = "";
-            container.appendChild(chim)
-        });
+        }
+        butt);
     </script>
 </body>
 </html>
