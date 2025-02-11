@@ -1,3 +1,4 @@
+console.log(`Chimichanga`);
 const { app, BrowserWindow } = require('electron')
 const create = require("got/dist/source/create");
 

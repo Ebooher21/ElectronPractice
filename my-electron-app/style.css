@@ -1,6 +1,14 @@
 body{
+    font-family: Comic Sans MS, sans-serif;
+    font-size: 20px;
     app-region: drag;
+    text-align: center;
+    padding: 20px;
 }
+#image-container {
+    margin-top: 20px;
+}
+
 .titlebar{
     user-select: none;
     app-region: drag;
