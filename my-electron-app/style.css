@@ -1,12 +1,14 @@
 body{
+    background-color: #11537799;
+    color: #AACCFF;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 5px;
     font-family: Comic Sans MS, sans-serif;
     font-size: 20px;
     app-region: drag;
     text-align: center;
     padding: 20px;
-}
-#image-container {
-    margin-top: 20px;
 }
 
 .titlebar{

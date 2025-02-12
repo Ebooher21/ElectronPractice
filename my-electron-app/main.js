@@ -2,9 +2,7 @@
 console.log(`Chimichanga`);
 //window.alert doesn't work because window isn't recognized - using node.js
 //document.getSelection('H1').textContent = 'I want a chimichanga!';
-const electron = require('electron')
-const app = electron.app;
-const BrowserWindow = electron.BrowserWindow;
+const {electron, app, BrowserWindow} = require('electron');
 
 const createWindow = () => {
     const win = new BrowserWindow({
@@ -23,7 +21,12 @@ const createWindow = () => {
         let win = null;
     })
 }
+/*
+const chimbtn = document.getElementById('chimbtn');
+chimbtn.addEventListener('click', function(event){
 
+})
+*/
 app.on('ready', createWindow)
 
 //for mac
